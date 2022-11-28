@@ -1,0 +1,9 @@
+version: "3"
+services:
+        node-app:
+                container_name: my_node_app
+                build: .
+                volumes:
+                        - .:/app:ro
+                ports:
+                        - "5000:4000"
